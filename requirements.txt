@@ -1,2 +1,2 @@
 pypdf==4.1.0
-legacy-cgi
+flask>=3.0.0

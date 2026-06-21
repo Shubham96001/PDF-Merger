@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Processor | Built for Digital Heroes</title>
+    <meta name="description" content="Free online PDF tools – merge, split, compress, rotate, and protect your PDFs instantly.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">📄 PDF Processor</div>
+        <a href="https://digitalheroesco.com" target="_blank" class="dh-button">Built for Digital Heroes</a>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>All the PDF tools you need, for free.</h1>
+            <p>Merge, rotate, and protect your PDFs — securely in your browser.</p>
+        </div>
+
+        <div class="tools-grid">
+            <button class="tool-card active" data-tool="merge">Merge PDF</button>
+            <button class="tool-card" data-tool="rotate">Rotate PDF</button>
+            <button class="tool-card" data-tool="password">Add Password</button>
+        </div>
+
+        <div class="workspace">
+            <h2 id="tool-title">Merge PDF</h2>
+
+            <div class="upload-area" id="upload-area">
+                <p>📂 Drag &amp; drop PDFs here or click to select</p>
+                <p style="font-size: 0.82rem; color: #94a3b8; margin-top: 0.5rem;">Max 4 MB total</p>
+                <input type="file" id="file-input" multiple accept="application/pdf">
+            </div>
+
+            <div id="options-area" class="options-area hidden"></div>
+            <div id="file-list" class="file-list"></div>
+
+            <button id="process-btn" class="primary-btn hidden">⚙️ Process PDF</button>
+
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Processing your PDF…</p>
+            </div>
+
+            <div id="error-message" class="error hidden"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by Shubham Verma &nbsp;·&nbsp;
+            <a href="mailto:shubhamverma9298@gmail.com">shubhamverma9298@gmail.com</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
